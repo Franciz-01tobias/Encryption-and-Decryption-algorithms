@@ -1,4 +1,3 @@
-package com.company.ISC;
 
 import java.util.Random;
 import java.util.Scanner;

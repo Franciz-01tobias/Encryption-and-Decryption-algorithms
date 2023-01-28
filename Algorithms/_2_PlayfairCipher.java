@@ -1,4 +1,3 @@
-package com.company.ISC;
 
 import java.util.Arrays;
 import java.util.Scanner;

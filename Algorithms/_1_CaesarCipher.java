@@ -1,6 +1,6 @@
-package com.company.ISC;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class _1_CaesarCipher2 {
 
@@ -35,17 +35,14 @@ public class _1_CaesarCipher2 {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the plain text : ");
-        String pt = sc.nextLine();
+        String pt,key;
+        pt =JOptionPane.showInputDialog("Enter the plain text:");
+        key =JOptionPane.showInputDialog("Enter the key :");
+        int key1=Integer.parseInt(key);
 
-        System.out.print("Enter the key : ");
-        int key = sc.nextInt();
-
-        String cipher = encryption(pt, key);
-        System.out.println("Cipher text is : " + cipher);
-
-        String plainText = decryption(cipher, key);
-        System.out.println("Plain text is : " + plainText);
+        String cipher = encryption(pt, key1);
+        JOptionPane.showMessageDialog(null," Cipher text is : " + cipher);
+        String plainText = decryption(cipher, key1);
+        JOptionPane.showMessageDialog(null,"Plain text is : " + plainText);
     }
 }
